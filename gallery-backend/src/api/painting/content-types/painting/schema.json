@@ -4,7 +4,8 @@
   "info": {
     "singularName": "painting",
     "pluralName": "paintings",
-    "displayName": "Painting"
+    "displayName": "Painting",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,7 +26,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "artist": {
       "type": "relation",
@@ -33,9 +36,9 @@
       "target": "api::artist.artist",
       "inversedBy": "paintings"
     },
-    "category": {
+    "categories": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "paintings"
     }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "artist",
     "pluralName": "artists",
-    "displayName": "Artist"
+    "displayName": "Artist",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,7 +23,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "birth_date": {
       "type": "date"
