@@ -4,8 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Category",
-    "description": ""
+    "displayName": "Category"
   },
   "options": {
     "draftAndPublish": true
@@ -18,9 +17,9 @@
     },
     "paintings": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::painting.painting",
-      "mappedBy": "categories"
+      "mappedBy": "category"
     }
   }
 }
